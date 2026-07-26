@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Himanshu — a beginner full-stack developer learning HTML, CSS, JavaScript, and Node.js.">
+  <title>About · Himanshu's Web Dev Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span>&lt;/&gt;</span>Himanshu's Journal</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section class="hero" style="padding-top: 2.5rem;">
+        <p class="eyebrow">About me</p>
+        <h1>Hi, I'm Himanshu.</h1>
+        <p class="lede">
+          I'm a beginner backend and frontend development student, currently building
+          real projects to turn tutorials into practical skill. I work on Windows with
+          VS Code as my daily driver, and I learn best by breaking things &mdash; then
+          figuring out why they broke.
+        </p>
+      </section>
+
+      <section id="story">
+        <h2>How I got here</h2>
+        <p>
+          I started with the basics: structuring pages with HTML, styling them with CSS,
+          and slowly working my way into JavaScript. From there I moved into backend
+          development with Node.js, which is where most of my recent debugging battles
+          have happened &mdash; npm setup issues, port conflicts, and untangling
+          CommonJS from ES module syntax.
+        </p>
+        <p>
+          On the frontend side, I recently finished a hotel listing website built with
+          plain HTML, CSS, and JavaScript, wired up to a real API and submitted through
+          GitHub. This site follows the same philosophy: build something real, ship it,
+          and learn from what goes wrong.
+        </p>
+      </section>
+
+      <section id="timeline">
+        <h2>Recent learning log</h2>
+        <ol class="log">
+          <li>
+            <span class="date">Week 1</span>
+            <h3>Frontend fundamentals</h3>
+            <p>Built a hotel listing site with vanilla HTML/CSS/JS, integrated a real API,
+              and pushed it to GitHub.</p>
+          </li>
+          <li>
+            <span class="date">Week 2</span>
+            <h3>Backend basics with Node.js</h3>
+            <p>Started a Spotify clone project &mdash; sorted out npm setup, resolved a
+              port conflict, and learned the difference between CommonJS and ES modules.</p>
+          </li>
+          <li>
+            <span class="date">Now</span>
+            <h3>Practicing full pages</h3>
+            <p>Putting HTML structure, semantic layout, forms, and accessibility together
+              into one small multi-page site &mdash; this one.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="skills-table">
+        <h2>Skills snapshot</h2>
+        <table>
+          <caption>Self-rated comfort level, out of 5</caption>
+          <thead>
+            <tr>
+              <th scope="col">Skill</th>
+              <th scope="col">Area</th>
+              <th scope="col">Comfort</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML &amp; CSS</td>
+              <td>Frontend</td>
+              <td>4 / 5</td>
+            </tr>
+            <tr>
+              <td>JavaScript (DOM &amp; fetch)</td>
+              <td>Frontend</td>
+              <td>3 / 5</td>
+            </tr>
+            <tr>
+              <td>Node.js &amp; npm</td>
+              <td>Backend</td>
+              <td>2 / 5</td>
+            </tr>
+            <tr>
+              <td>Git &amp; GitHub</td>
+              <td>Tooling</td>
+              <td>3 / 5</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>&copy; 2026 Himanshu. Built while learning.</span>
+      <span><a href="index.html">Home</a> &middot; About &middot; <a href="contact.html">Contact</a></span>
+    </div>
+  </footer>
+
+</body>
+</html>
