@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +7,13 @@
   <meta name="description" content="Get in touch with Himanshu — student developer, always open to feedback and collaboration.">
   <title>Contact · Himanshu's Web Dev Journal</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrap">
-      <a class="brand" href="index.html"><span>&lt;/&gt;</span>Himanshu's Journal</a>
+      <a class="brand" href="index.html"><span>&lt;/&gt;</span>Himanshu  Sonkar</a>
       <nav class="site-nav" aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -19,6 +21,7 @@
           <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
+      <button id="themeButton" class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
     </div>
   </header>
 
@@ -94,33 +97,11 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <span>&copy; 2026 Himanshu. Built while learning.</span>
+      <span>&copy; 2026 Himanshu Sonkar. Built while learning.</span>
       <span><a href="index.html">Home</a> &middot; <a href="about.html">About</a> &middot; Contact</span>
     </div>
   </footer>
 
-  <script>
-    // Client-side only demo: this form has no backend yet, so we just
-    // confirm the submission in the page instead of sending it anywhere.
-    const form = document.getElementById('messageForm');
-    const status = document.getElementById('formStatus');
-
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-
-      if (!form.checkValidity()) {
-        status.textContent = 'Please fill in your name, email, and message before sending.';
-        status.classList.add('visible');
-        return;
-      }
-
-      const name = document.getElementById('name').value.trim();
-      status.textContent = 'Thanks, ' + name + '! This demo form isn\'t connected to a server yet, ' +
-        'but your message looked good and is ready to be wired up to one.';
-      status.classList.add('visible');
-      form.reset();
-    });
-  </script>
 
 </body>
 </html>
