@@ -395,6 +395,77 @@ textarea { resize: vertical; min-height: 120px; }
   gap: 0.5rem;
 }
 
+/* ---------- Theme toggle button ---------- */
+.theme-toggle {
+  background: transparent;
+  border: 2px solid var(--clay);
+  color: var(--paper);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.45rem 0.65rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--clay);
+  transform: translateY(-2px);
+}
+
+/* ---------- Dark mode ---------- */
+body.dark {
+  --paper: #14201b;
+  --paper-dim: #1b2b24;
+  --ink: #eae6da;
+  --mist: #2a362f;
+  --line: #33423a;
+}
+
+body.dark .site-header {
+  background: #0b1613;
+}
+
+body.dark a {
+  color: #8fc9bb;
+}
+
+body.dark a:hover {
+  color: var(--clay);
+}
+
+body.dark .card {
+  background: var(--paper-dim);
+}
+
+body.dark .skills li {
+  background: #0b1613;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+  background: #1b2b24;
+  color: var(--ink);
+  border-color: var(--line);
+}
+
+body.dark .form-status {
+  background: #24352d;
+  color: #eae6da;
+}
+
+body.dark .btn-primary {
+  background: #8fc9bb;
+  color: #0b1613 !important;
+  border-color: #8fc9bb;
+}
+
+body.dark .btn-ghost {
+  color: var(--ink) !important;
+  border-color: var(--line);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 600px) {
   .site-header .wrap { flex-direction: column; align-items: flex-start; }
